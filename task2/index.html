@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background: #f4f4f4;
+            color: #333;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            background: #0d6efd;
+            color: white;
+        }
+        
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+        
+        .hero {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 80px 40px;
+            flex-wrap: wrap;
+            background: white;
+        }
+        
+        .hero-text {
+            max-width: 500px;
+        }
+        
+        .hero-text h1 {
+            font-size: 45px;
+            margin-bottom: 20px;
+        }
+        
+        .hero-text p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+        
+        .hero-text button {
+            padding: 12px 25px;
+            background: #0d6efd;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        .hero img {
+            width: 400px;
+            max-width: 100%;
+        }
+        
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        
+        .card {
+            background: white;
+            padding: 20px;
+            width: 280px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
+            transition: .3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-8px);
+        }
+        
+        .card h3 {
+            margin: 15px 0;
+            color: #0d6efd;
+        }
+        
+        footer {
+            background: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        @media(max-width:768px) {
+            header {
+                flex-direction: column;
+            }
+            nav {
+                margin-top: 15px;
+            }
+            .hero {
+                text-align: center;
+            }
+            .hero-text h1 {
+                font-size: 35px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">TechNova</div>
+
+        <nav>
+
+            <a href="#">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+    </header>
+
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <h1>Build Modern Websites</h1>
+
+            <p>
+                Create responsive and beautiful websites using HTML, CSS and JavaScript.
+            </p>
+
+            <button onclick="welcome()">Get Started</button>
+
+        </div>
+
+        <div>
+
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600" alt="Hero Image">
+
+        </div>
+
+    </section>
+
+    <section id="services">
+
+        <h2>Our Services</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>Web Design</h3>
+
+                <p>
+                    Modern and responsive website design.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Development</h3>
+
+                <p>
+                    HTML, CSS and JavaScript based projects.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>SEO</h3>
+
+                <p>
+                    Improve your website visibility.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="about">
+
+        <h2>About Us</h2>
+
+        <p>
+            We create attractive and user-friendly websites for students, startups and businesses.
+        </p>
+
+    </section>
+
+    <section id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>Email : info@technova.com</p>
+
+        <p>Phone : +91 9876543210</p>
+
+    </section>
+
+    <footer>
+
+        <p>© 2026 TechNova | All Rights Reserved</p>
+
+    </footer>
+
+    <script>
+        function welcome() {
+
+            alert("Welcome to TechNova Landing Page!");
+
+        }
+    </script>
+
+</body>
+
+</html>
